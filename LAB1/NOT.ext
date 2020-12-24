@@ -1,0 +1,16 @@
+timestamp 1596723265
+version 8.2
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "Ground" 385 3807 -4 -18 ndiff 70 34 50 40 0 0 0 0 0 0 0 0 151 64 0 0 0 0
+node "Vout" 113 4888 7 -18 ndiff 50 30 25 20 0 0 0 0 0 0 0 0 156 80 0 0 0 0
+node "Vin" 233 8374 -3 -6 pc 0 0 0 0 156 86 0 0 0 0 0 0 50 30 0 0 0 0
+node "VDD" 2721 0 -4 3 nw 50 40 25 20 0 0 0 0 0 0 0 0 172 68 0 0 441 84
+cap "VDD" "Vin" 2540
+cap "VDD" "Vout" 564
+device mosfet nfet 3 -18 4 -17 4 10 "Gnd!" "Vin" 8 0 "Ground" 10 0 "Vout" 10 0
+device mosfet pfet 3 6 4 7 4 5 "VDD" "Vin" 8 0 "VDD" 5 0 "Vout" 5 0
+subcap "Vout" -235
+subcap "Vin" -282
